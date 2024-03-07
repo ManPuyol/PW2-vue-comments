@@ -8,12 +8,12 @@
 
 <script setup>
 import { ref } from 'vue';
-import CommentForm from './CommentForm.vue';
-import CommentList from './CommentList.vue';
+import CommentForm from './components/ComponentForm.vue';
+import CommentList from './components/CommentList.vue';
 
 const comments = ref([]);
 
 function addComment(newComment) {
-  // TODO: Implementa esta función para añadir un nuevo comentario al array comments.
+  comments.value.push(newComment)
 }
 </script>
